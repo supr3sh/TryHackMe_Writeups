@@ -20,7 +20,7 @@ The criminal we call "Spider-Man" is back at it, clearly as seen in the image, S
 
 So the answer to the first question would be SpiderMan.
 
-For joomla enumeration, I used joomscan from OWASP. 
+For joomla enumeration, I used [joomscan](https://github.com/OWASP/joomscan) from OWASP. 
 From there, I found out the version of Joomla CMS being used. 
 
 Version: 3.7.0
@@ -37,7 +37,7 @@ Searchsploit had a text file telling about how we can exploit the vulnerability.
 URL Vulnerable: http://10.10.206.138/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml%27
 ```
 
-I found out a great exploit for this vulnerability: joomblah
+I found out a great exploit for this vulnerability: [joomblah](https://github.com/XiphosResearch/exploits/tree/master/Joomblah)
 On running this exploit with the URL, I got the table Users with its contents.
 
 ```

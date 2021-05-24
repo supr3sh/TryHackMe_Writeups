@@ -1,0 +1,52 @@
+# Nmap 7.91 scan initiated Mon May 24 14:23:39 2021 as: nmap -vvv -p 22,80,5432 -sC -sV -oN nmapScan 10.10.135.61
+Nmap scan report for 10.10.135.61
+Host is up, received echo-reply ttl 63 (0.19s latency).
+Scanned at 2021-05-24 14:23:40 IST for 16s
+
+PORT     STATE SERVICE    REASON         VERSION
+22/tcp   open  ssh        syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 71:ed:48:af:29:9e:30:c1:b6:1d:ff:b0:24:cc:6d:cb (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGK2azIgGLY4GFFZlpgMpyOub/To5vmftSEWkjbtFkTBvc5tW/SpoDtjyNMT0JKJUmFJ2/vp6oIpwyIRtDa+oomuNL//exbp/i798hl8FFo4Zq5HsDvQCwNKZ0lfk0HGYgbXj6WAjohokSbkDY1U26FN/MKE2JxcXLcN8n1QmvVbP5p8zO/jgrXvX6DLv4eHxJjhzsBJ6DwFMchtBwy4CiTQsiCUcAyyua93LJO6NEnnM4SOwOUE/wyggCNPbwzB1wzPLAgaiU+M2gn9/XZGmlD+vWOBu3sruCB2PnRuM3cx27gDbbElR4KDIOq2ar66rV+yIZQoQ7KfVUNUFFCbRz
+|   256 eb:3a:a3:4e:6f:10:00:ab:ef:fc:c5:2b:0e:db:40:57 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN2f/wWkOMnH6rNZ+0m2p+PrzBVbz/vfQ/k9rx9W27i9DLBKmRM2b2ntmg8tSwHhZVTb/FvStJci9SIBLAqao00=
+|   256 3e:41:42:35:38:05:d3:92:eb:49:39:c6:e3:ee:78:de (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKYg/uhFbBiQ1iu6NNNYtD/tRDbHmPXw4p/nYv+twijq
+80/tcp   open  http       syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Poster CMS
+5432/tcp open  postgresql syn-ack ttl 63 PostgreSQL DB 9.5.8 - 9.5.10 or 9.5.17 - 9.5.21
+| ssl-cert: Subject: commonName=ubuntu
+| Issuer: commonName=ubuntu
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-07-29T00:54:25
+| Not valid after:  2030-07-27T00:54:25
+| MD5:   da57 3213 e9aa 9274 d0be c1b0 bbb2 0b09
+| SHA-1: 4e03 8469 28f7 673b 2bb2 0440 4ba9 e4d2 a0d0 5dd5
+| -----BEGIN CERTIFICATE-----
+| MIICsjCCAZqgAwIBAgIJAIrmTOUt3qZtMA0GCSqGSIb3DQEBCwUAMBExDzANBgNV
+| BAMMBnVidW50dTAeFw0yMDA3MjkwMDU0MjVaFw0zMDA3MjcwMDU0MjVaMBExDzAN
+| BgNVBAMMBnVidW50dTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMca
+| tkPhi1xPkNomQzkTX+XRDk0RPBxRJQm17+Q8sru8J72rToPVyZesM7v5M+ttfqlZ
+| sHAevEv/iVb1D6hNPawU9kG61Ja9baHd1s31H7RjWxpMS2vZuiu6/oXNWpc4yinQ
+| RDWgLqKhDzczacMWLxKkgh06H8DI04/4pCJ6pbf6gXFfVRrccOu1FmoVlWWdVeGd
+| CZ2C8XOA1tEEE6UG9HI9Q2gd3AHOSex+ar3EnWm1LanYDQPJSXEgl/K2A9D5DQEw
+| +xJxPnH9abqxUrLUDOxzbMpdqXfb0OHxy7jeBJhpd6DonAZTEACdsgh9SzssH4ac
+| FOqjsJjfSzok3x3uBx0CAwEAAaMNMAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQsF
+| AAOCAQEAxGskqCN0uihEe1rpb7fveGYGMhDsFso9aYdJ4Q3CHJHX3leCN92nLCOq
+| R9bTRgVjrvph00jO3+qhHzXCLbnpZXu9R9mPsfcDU/IFCFxMNmjRs4DkkzpGWAyp
+| t5I18Zxh4JWJP7Mf1zc39z2Zk/IucAI5kMPMDJUWR/mjVFG/iZY8W+YlKsfvWblU
+| tY4RYFhVy9JTVFYe5ZxghLxylYi+cbkGcPMj7qaOkDWIWhILZX1DDAb7cSfVd4rq
+| 2ayWhA4Dh/FJkL2j+5mfAku0C7qMAqSlJTMRa6pTQjXeGafLDBoomQIIFnhWOITS
+| fohtzsob6PyjssrRoqlRkJLJEJf2YQ==
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon May 24 14:23:56 2021 -- 1 IP address (1 host up) scanned in 18.38 seconds
